@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arshad Chaudhry · O & A Level Physics, Lahore</title>
+<meta name="description" content="Arshad Chaudhry teaches O Level, IGCSE and A Level Physics in Lahore at leading schools and academies. MSc Physics, author of widely used O & A Level physics notes and workbooks.">
+<meta property="og:title" content="Arshad Chaudhry · O & A Level Physics">
+<meta property="og:description" content="O Level, IGCSE and A Level Physics teacher in Lahore.">
+<meta property="og:image" content="arshad-chaudhry.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f5f0;
+    --surface: #ffffff;
+    --ink: #1c1d21;
+    --muted: #5d6068;
+    --line: #e3e0d8;
+    --accent: #1f5f5b;
+    --accent-soft: #e4efed;
+    --wa: #1f7a4d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121416;
+      --surface: #1a1d20;
+      --ink: #ecebe7;
+      --muted: #a2a5ab;
+      --line: #2b2f33;
+      --accent: #7cc4bb;
+      --accent-soft: #1c2c2a;
+      --wa: #3fae78;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  header.top {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 0;
+  }
+  .brand { font: 600 18px/1 Fraunces, serif; text-decoration: none; letter-spacing: -0.01em; }
+  .brand span { color: var(--accent); }
+  nav a {
+    color: var(--muted); text-decoration: none; font-size: 15px; margin-left: 24px;
+  }
+  nav a:hover { color: var(--ink); }
+
+  .hero {
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;
+    padding: 48px 0 80px;
+  }
+  .eyebrow {
+    display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  h1, h2, h3 { font-family: Fraunces, serif; font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; margin: 0; }
+  h1 { font-size: clamp(40px, 6vw, 64px); line-height: 1.05; margin: 14px 0 20px; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 34ch; margin: 0 0 32px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 13px 22px; border-radius: 999px; font-weight: 500; font-size: 16px;
+    text-decoration: none; border: 1px solid var(--line); background: var(--surface);
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); border-color: var(--ink); }
+  .btn.primary { background: var(--wa); border-color: var(--wa); color: #fff; }
+  .btn.primary:hover { border-color: var(--wa); }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+
+  .portrait { position: relative; }
+  .portrait img {
+    display: block; width: 100%; height: auto; aspect-ratio: 711 / 843; object-fit: cover;
+    border-radius: 24px; background: var(--line);
+  }
+  .portrait .tag {
+    position: absolute; left: -20px; bottom: 28px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 12px 16px; font-size: 14px; line-height: 1.35;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  }
+  .portrait .tag strong { display: block; font-size: 15px; }
+  .portrait .tag span { color: var(--muted); }
+
+  .wave { display: block; width: 100%; height: 40px; color: var(--line); }
+
+  section { padding: 72px 0; }
+  .section-head { margin-bottom: 36px; }
+  .section-head h2 { font-size: clamp(28px, 4vw, 38px); margin-top: 8px; }
+
+  .levels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 28px;
+  }
+  .card .code {
+    display: inline-block; font-size: 13px; font-weight: 600; color: var(--accent);
+    background: var(--accent-soft); padding: 4px 10px; border-radius: 999px; margin-bottom: 16px;
+  }
+  .card h3 { font-size: 24px; margin-bottom: 8px; }
+  .card p { margin: 0; color: var(--muted); font-size: 16px; }
+
+  .about { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
+  .about p { margin: 0 0 16px; color: var(--muted); }
+  .about p strong { color: var(--ink); font-weight: 500; }
+  .facts { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+  .facts li {
+    display: flex; justify-content: space-between; gap: 16px;
+    padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 16px;
+  }
+  .facts li span:first-child { color: var(--muted); }
+  .facts li span:last-child { text-align: right; font-weight: 500; }
+
+  .schools { display: flex; flex-wrap: wrap; gap: 10px; }
+  .schools li {
+    list-style: none; padding: 10px 18px; border: 1px solid var(--line); border-radius: 999px;
+    background: var(--surface); font-size: 15px;
+  }
+  .schools { padding: 0; margin: 0; }
+
+  .books { display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, auto); grid-auto-flow: column; gap: 0 40px; padding: 0; margin: 0; }
+  .books li {
+    list-style: none; display: flex; justify-content: space-between; gap: 16px;
+    padding: 16px 0; border-bottom: 1px solid var(--line);
+  }
+  .books li span:last-child { color: var(--muted); font-size: 15px; white-space: nowrap; }
+
+  .contact {
+    background: var(--accent); color: #fff; border-radius: 28px; padding: 56px;
+    display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center;
+  }
+  @media (prefers-color-scheme: dark) { .contact { color: #0f1a19; } }
+  .contact h2 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 12px; }
+  .contact p { margin: 0; opacity: .85; }
+  .contact .actions { justify-content: flex-end; }
+  .contact .btn { background: transparent; border-color: currentColor; color: inherit; }
+  .contact .btn.solid { background: #fff; color: #1f5f5b; border-color: #fff; }
+  .contact address { font-style: normal; margin-top: 20px; font-size: 15px; opacity: .85; }
+
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 860px) {
+    .hero, .about, .contact { grid-template-columns: 1fr; gap: 36px; }
+    .hero { padding-top: 16px; }
+    .portrait { max-width: 420px; }
+    .portrait .tag { left: 16px; }
+    .levels { grid-template-columns: 1fr; }
+    .books { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; }
+    .contact { padding: 36px 24px; }
+    .contact .actions { justify-content: flex-start; }
+    nav a:not(:last-child) { display: none; }
+  }
+  @media (max-width: 480px) {
+    .wrap { padding: 0 16px; }
+    .books li { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#">Arshad Chaudhry<span>.</span></a>
+    <nav>
+      <a href="#levels">Classes</a>
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <span class="eyebrow">Physics · Lahore</span>
+        <h1>O &amp; A Level Physics, taught clearly.</h1>
+        <p class="lead">Arshad Chaudhry teaches Cambridge O Level, IGCSE and A Level Physics at leading schools and academies across Lahore.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/923116333666?text=Assalam%20o%20Alaikum%20Sir%2C%20I%20would%20like%20to%20ask%20about%20your%20physics%20classes." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+            WhatsApp
+          </a>
+          <a class="btn" href="tel:+923116333666">Call 0311 6333666</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="arshad-chaudhry.jpg" alt="Portrait of Arshad Chaudhry" width="711" height="843">
+        <div class="tag"><strong>MSc Physics</strong><span>O Level · IGCSE · A Level</span></div>
+      </div>
+    </div>
+
+    <svg class="wave" viewBox="0 0 1040 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 20 Q 32.5 0 65 20 T 130 20 T 195 20 T 260 20 T 325 20 T 390 20 T 455 20 T 520 20 T 585 20 T 650 20 T 715 20 T 780 20 T 845 20 T 910 20 T 975 20 T 1040 20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+
+    <section id="levels">
+      <div class="section-head">
+        <span class="eyebrow">Classes</span>
+        <h2>Every Cambridge physics level</h2>
+      </div>
+      <div class="levels">
+        <div class="card">
+          <span class="code">5054</span>
+          <h3>O Level</h3>
+          <p>Full syllabus coverage with topical practice, past papers and Paper 4 alternative-to-practical preparation.</p>
+        </div>
+        <div class="card">
+          <span class="code">0625</span>
+          <h3>IGCSE</h3>
+          <p>The same strong foundations for IGCSE students, built around the current Cambridge syllabus.</p>
+        </div>
+        <div class="card">
+          <span class="code">9702</span>
+          <h3>A Level</h3>
+          <p>AS and A2 physics, from multiple-choice technique in Paper 1 to structured and extended questions in Papers 2 and 4.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <div class="section-head">
+          <span class="eyebrow">About</span>
+          <h2>A familiar name in Lahore physics classrooms</h2>
+        </div>
+        <div>
+          <p>Arshad Chaudhry holds an <strong>MSc in Physics</strong> and teaches O and A Level Physics in schools and academies across Lahore. He has taught at some of the city's best-known schools, including <strong>Aitchison College</strong>, <strong>LGS</strong> and <strong>Beaconhouse</strong>.</p>
+          <p>He is also the author of the <strong>“286 Read &amp; Write” O Level Physics notes</strong> and a series of O and A Level workbooks used by students preparing for their Cambridge exams.</p>
+          <ul class="facts">
+            <li><span>Subject</span><span>Physics</span></li>
+            <li><span>Levels</span><span>O Level, IGCSE, A Level</span></li>
+            <li><span>Qualification</span><span>MSc Physics</span></li>
+            <li><span>Based in</span><span>Lahore, Pakistan</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="schools">
+      <div class="section-head">
+        <span class="eyebrow">Where he teaches</span>
+        <h2>Schools &amp; academies</h2>
+      </div>
+      <ul class="schools">
+        <li>LGS 1A1 &amp; OPF</li>
+        <li>LGS Johar Town</li>
+        <li>Beaconhouse (GC, JT)</li>
+        <li>Pak Turk</li>
+        <li>LACAS (JT)</li>
+        <li>The City School</li>
+        <li>Greenhall Academy</li>
+        <li>Aitchison College (former)</li>
+      </ul>
+    </section>
+
+    <section id="books">
+      <div class="section-head">
+        <span class="eyebrow">Publications</span>
+        <h2>Notes &amp; workbooks</h2>
+      </div>
+      <ul class="books">
+        <li><span>281 · Paper 1 Past Papers</span><span>O Level</span></li>
+        <li><span>282 · Paper 2 Workbook</span><span>O Level</span></li>
+        <li><span>284 · Paper 4 ATP Workbook</span><span>O Level</span></li>
+        <li><span>286 · Read &amp; Write Revision Notes</span><span>O Level / IGCSE</span></li>
+        <li><span>291 · Paper 1 Topical MCQs</span><span>A Level</span></li>
+        <li><span>292 · Paper 2 Workbook</span><span>A Level</span></li>
+        <li><span>294 · Paper 4 Workbook</span><span>A Level</span></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div>
+          <h2>Join a class</h2>
+          <p>Message on WhatsApp for current batches, timings and venues.</p>
+          <address>Greenhall Academy, 395 Block G-1, Johar Town, Lahore</address>
+        </div>
+        <div class="actions">
+          <a class="btn solid" href="https://wa.me/923116333666?text=Assalam%20o%20Alaikum%20Sir%2C%20I%20would%20like%20to%20ask%20about%20your%20physics%20classes." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="tel:+923116333666">0311 6333666</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y">2026</span> Arshad Chaudhry · O &amp; A Level Physics, Lahore</footer>
+</div>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
