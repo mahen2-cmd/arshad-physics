@@ -163,6 +163,23 @@
   }
   .schools { padding: 0; margin: 0; }
 
+  .open-to {
+    margin-top: 32px; padding: 28px 32px; border-radius: 18px;
+    border: 1px dashed var(--accent); background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: space-between; gap: 32px;
+  }
+  .open-to h3 { font-size: 24px; margin: 10px 0 8px; }
+  .open-to p { margin: 0; color: var(--muted); font-size: 16px; max-width: 58ch; }
+  .open-to .btn { flex: none; }
+  .status {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--accent);
+  }
+  .status .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--wa);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--wa) 25%, transparent);
+  }
+
   .books { display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, auto); grid-auto-flow: column; gap: 0 40px; padding: 0; margin: 0; }
   .books li {
     list-style: none; display: flex; justify-content: space-between; gap: 16px;
@@ -186,6 +203,7 @@
   @media (max-width: 860px) {
     .hero, .about, .contact { grid-template-columns: 1fr; gap: 36px; }
     .hero { padding-top: 16px; }
+    .open-to { flex-direction: column; align-items: flex-start; padding: 24px; }
     .portrait { max-width: 420px; }
     .portrait .tag { left: 16px; }
     .levels { grid-template-columns: 1fr; }
@@ -308,6 +326,15 @@
         <li>Greenhall Academy</li>
         <li>Aitchison College (former)</li>
       </ul>
+
+      <div class="open-to">
+        <div>
+          <span class="status"><span class="dot"></span>Now accepting new schools &amp; academies</span>
+          <h3>Bring Arshad Chaudhry to your institution</h3>
+          <p>He is open to teaching O Level, IGCSE and A Level Physics at more schools and academies in Lahore. He can take regular classes, crash courses or exam revision sessions.</p>
+        </div>
+        <a class="btn" href="https://wa.me/923116333666?text=Assalam%20o%20Alaikum%20Sir%2C%20I%20am%20contacting%20you%20on%20behalf%20of%20a%20school%2Facademy%20about%20physics%20classes." target="_blank" rel="noopener">Contact for schools</a>
+      </div>
     </section>
 
     <section id="books">
@@ -330,7 +357,7 @@
       <div class="contact">
         <div>
           <h2>Join a class</h2>
-          <p>Message on WhatsApp for current batches, timings and venues.</p>
+          <p>Students: message on WhatsApp for current batches, timings and venues. Schools and academies: get in touch about adding physics classes.</p>
           <address>Greenhall Academy, 395 Block G-1, Johar Town, Lahore</address>
         </div>
         <div class="actions">
